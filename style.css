@@ -1,0 +1,102 @@
+.shooter {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    background: radial-gradient(circle at center, #444, #000);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.shooter .start {
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    font-size: 80px;
+    cursor: pointer;
+    opacity: 0.15;
+}
+
+.shooter .score {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0.15;
+}
+
+.shooter .score .value {
+    font-size: 120px;
+}
+
+.shooter .score .unit {
+    font-size: 30px;
+}
+
+
+.shooter .timer {
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+    text-transform: uppercase;
+    cursor: pointer;
+    opacity: 0.15;
+    font-size: 30px;
+}
+
+.shooter .targets {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.shooter .targets .target{
+    position: absolute;
+    top: 25%;
+    left: 25%;
+    width: 12vmin;
+    height: 12vmin;
+    margin-top: -6vmin;
+    margin-left: -6vmin;
+    background: #ddd;
+    border-radius: 50%;
+    box-shadow: 5px 5px 15px #00000055;
+}
+
+.shooter .targets .target::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100% / 3 * 2);
+    height: calc(100% / 3 * 2);
+    transform: translate(-50%, -50%);
+    background: #ff0000;
+    border-radius: 50%;
+}
+
+.shooter .targets .target::after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: calc(100% / 3 * 1);
+    height: calc(100% / 3 * 1);
+    transform: translate(-50%, -50%);
+    background: #dddddd;
+    border-radius: 50%;
+}
+
+
+
