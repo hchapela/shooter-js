@@ -11,6 +11,7 @@
 
 .shooter .start {
     display: none;
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -23,6 +24,7 @@
 }
 
 .shooter .score {
+    display: none;
     position: absolute;
     top: 50%;
     left: 50%;
@@ -43,6 +45,7 @@
 
 
 .shooter .timer {
+    display: none;
     position: absolute;
     top: 10%;
     left: 50%;
@@ -55,6 +58,7 @@
 }
 
 .shooter .targets {
+    display: none;
     position: absolute;
     top: 0;
     left: 0;
@@ -98,6 +102,21 @@
     background: #dddddd;
     border-radius: 50%;
 }
+
+.shooter.step-start .start,
+.shooter.step-game .score,
+.shooter.step-game .timer,
+.shooter.step-game .targets,
+.shooter.step-end .score,
+.shooter.step-end .start {
+    display: block;
+}
+
+.shooter.step-end .score {
+    top: 25%;
+}
+
+
 
 
 
