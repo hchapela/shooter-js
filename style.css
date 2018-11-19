@@ -57,6 +57,20 @@
     font-size: 30px;
 }
 
+
+.shooter .best-score {
+    display: none;
+    position: absolute;
+    bottom: 25%;
+    left: 50%;
+    transform: translate(-50%, 50%);
+    color: #ffffff;
+    text-transform: uppercase;
+    opacity: 0.15;
+    font-size: 30px;
+}
+
+
 .shooter .targets {
     display: none;
     position: absolute;
@@ -66,7 +80,7 @@
     height: 100%;
 }
 
-.shooter .targets .target{
+.shooter .targets .target {
     position: absolute;
     top: 25%;
     left: 25%;
@@ -108,15 +122,12 @@
 .shooter.step-game .timer,
 .shooter.step-game .targets,
 .shooter.step-end .score,
-.shooter.step-end .start {
+.shooter.step-end .start,
+.shooter.step-start .best-score,
+.shooter.step-end .best-score {
     display: block;
 }
 
 .shooter.step-end .score {
     top: 25%;
 }
-
-
-
-
-
